@@ -1,82 +1,96 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function FoodMenuCard() {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      {/* FOOD MENU CARD */}
-      <div
+      {/* Main Card */}
+      <motion.div
+        whileTap={{ scale: 0.98 }}
         onClick={() => setOpen(true)}
-        className="bg-white rounded-2xl shadow-lg p-5 mt-4 cursor-pointer text-gray-900"
+        className="bg-white rounded-2xl shadow-lg p-4 mt-4 cursor-pointer"
       >
-        <div className="flex items-center justify-between">
-          <h2 className="text-lg font-bold flex items-center gap-2">
-            🍽️ Food Menu
-          </h2>
-          <span className="text-xs text-blue-600">Tap to view</span>
-        </div>
-
-        <p className="text-sm mt-2 text-black/80">
-          Simple homely food provided daily
+        <h2 className="text-lg font-bold flex items-center gap-2">
+          🍽️ Food Menu
+        </h2>
+        <p className="text-sm text-gray-600 mt-1">
+          Homely food • Weekly breakfast menu
         </p>
-      </div>
+        <p className="text-xs text-blue-600 mt-2 font-medium">
+          👉 Tap to view food details
+        </p>
+      </motion.div>
 
-      {/* FOOD MENU MODAL */}
+      {/* Overlay */}
       <AnimatePresence>
         {open && (
           <motion.div
+            className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center px-4"
+            onClick={() => setOpen(false)}
           >
+            {/* Modal */}
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-2xl w-full max-w-md p-5 relative"
+              transition={{ duration: 0.25 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-white w-full max-w-md rounded-2xl p-5"
             >
-              <button
-                onClick={() => setOpen(false)}
-                className="absolute top-3 right-4 text-xl font-bold"
-              >
-                ✕
-              </button>
+              {/* Header */}
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-lg font-bold">🍽️ Food Details</h3>
+                <button
+                  onClick={() => setOpen(false)}
+                  className="text-gray-500 text-xl"
+                >
+                  ✕
+                </button>
+              </div>
 
-              <h3 className="text-lg font-bold mb-4 text-center">
-                🍽️ Food Details
-              </h3>
+              {/* Content */}
+              <div className="space-y-3 text-sm">
+                {/* Breakfast */}
+               {/* Breakfast */}
+<div className="rounded-xl p-3 border bg-yellow-50">
+  <p className="font-semibold mb-1">🍳 Breakfast (Weekly)</p>
+  <p className="text-sm text-gray-700">
+  7 days – 7 different breakfast items (rotational menu)
+</p>
 
-              <div className="space-y-4 text-sm">
-                <div>
-                  <p className="font-semibold">🌅 Breakfast</p>
-                  <p className="text-black/80">
-                    Same type daily (Idly / Dosa / Upma)
-                  </p>
-                </div>
+</div>
 
-                <div>
-                  <p className="font-semibold">🌞 Lunch</p>
-                  <p className="text-black/80">
+
+                {/* Lunch */}
+                <div className="rounded-xl p-3 border bg-green-50">
+                  <p className="font-semibold">🍛 Lunch (Daily)</p>
+                  <p className="text-xs text-gray-700 mt-1">
                     Rice, Curry, Dal, Sambar
                   </p>
                 </div>
 
-                <div>
-                  <p className="font-semibold">🌙 Dinner</p>
-                  <p className="text-black/80">
-                    Rice / Chapati with Curry
+                {/* Dinner */}
+                <div className="rounded-xl p-3 border bg-blue-50">
+                  <p className="font-semibold">🌙 Dinner (Daily)</p>
+                  <p className="text-xs text-gray-700 mt-1">
+                    Chapathi, Curry, Rasam, Buttermilk
                   </p>
                 </div>
 
-                <div>
-                  <p className="font-semibold">🍗 Non-Veg</p>
-                  <p className="text-black/80">
-                    Provided 2 times per week
+                {/* Non Veg */}
+                <div className="rounded-xl border border-red-200 bg-red-50 p-3 text-center">
+                  <p className="font-semibold text-red-700">
+                    🍗 Non-Veg Provided
+                  </p>
+                  <p className="text-xs text-red-600 mt-1">
+                    2 times per week
                   </p>
                 </div>
               </div>

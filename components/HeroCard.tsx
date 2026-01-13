@@ -14,8 +14,8 @@ export default function HeroCard() {
       {/* IMAGE SECTION */}
       <div className="relative h-56">
         <Image
-          src="/images/pg-front-v2.jpg"
-          alt="Sai Baba PG for Men's"
+          src="/images/pg-frontV3.jpg"
+          alt="Platinum Bloom Women's Pg"
           fill
           className="object-cover"
           priority
@@ -41,7 +41,7 @@ export default function HeroCard() {
         </p>
 
         <h1 className="text-xl font-bold mt-1">
-          Sai Baba Men’s Hostel2
+          Platinum Bloom Women's Pg"
         </h1>
 
         <p className="text-gray-600 text-sm mt-1">
@@ -63,7 +63,7 @@ export default function HeroCard() {
             href="tel:9876543210"
             className="font-semibold text-green-700 underline"
           >
-            9876543210
+            9701716111
           </a>
         </p>
       </div>

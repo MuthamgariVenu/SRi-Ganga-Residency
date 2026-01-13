@@ -5,10 +5,10 @@ import Image from "next/image";
 import { useState } from "react";
 
 const images = [
-  { src: "/images/roomV2.jpg", label: "Room" },
-  { src: "/images/diningV2.jpg", label: "Dining" },
-  { src: "/images/bathroomV2.jpg", label: "Bathroom" },
-  { src: "/images/outsideV2.jpg", label: "Outside" },
+  { src: "/images/roomV3.jpg", label: "Room" },
+  { src: "/images/diningV3.jpg", label: "Dining" },
+  { src: "/images/bathroomV3.jpg", label: "Bathroom" },
+  { src: "/images/outsideV3.jpg", label: "Outside" },
 ];
 
 export default function GalleryCard() {

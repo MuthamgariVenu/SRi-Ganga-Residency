@@ -10,7 +10,7 @@ export default function RoomsCard() {
     <>
       {/* Main Card */}
       <motion.div
-        whileTap={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
         onClick={() => setOpen(true)}
         className="bg-white rounded-2xl shadow-lg p-4 mt-4 cursor-pointer"
       >
@@ -37,7 +37,7 @@ export default function RoomsCard() {
             exit={{ opacity: 0 }}
             onClick={() => setOpen(false)}
           >
-            {/* Modal Card */}
+            {/* Modal – SIZE SAME (DON’T CHANGE) */}
             <motion.div
               initial={{ y: 300 }}
               animate={{ y: 0 }}
@@ -46,7 +46,8 @@ export default function RoomsCard() {
               onClick={(e) => e.stopPropagation()}
               className="bg-white w-full max-w-md rounded-t-3xl p-5"
             >
-              <div className="flex justify-between items-center mb-3">
+              {/* Header */}
+              <div className="flex justify-between items-center mb-4">
                 <h3 className="text-lg font-bold">🛏️ Rooms & Rent</h3>
                 <button
                   onClick={() => setOpen(false)}
@@ -56,15 +57,29 @@ export default function RoomsCard() {
                 </button>
               </div>
 
+              {/* ROOMS AS CARDS (SIZE SAME) */}
               <div className="space-y-3 text-sm">
-                <Room title="5 Sharing – Non-AC" price="₹6,000" />
-                <Room title="4 Sharing – Non-AC" price="₹6,500" />
-                <Room title="3 Sharing – Non-AC" price="₹7,000" />
-                <Room title="3 Sharing – Non-AC (Premium)" price="₹8,000" />
-                <Room title="2 Sharing – Non-AC" price="₹9,500" highlight />
+                
+                <Room
+                  title="4 Sharing – Non-AC"
+                  price="₹6,000 And ₹6,500 / month"
+                  bg="bg-indigo-50"
+                />
+                <Room
+                  title="3 Sharing – Non-AC"
+                  price="₹7,500 And ₹8,000/ month"
+                  bg="bg-cyan-50"
+                />
+                
+                <Room
+                  title="2 Sharing – Non-AC"
+                  price="₹9,500 / month"
+                  bg="bg-green-50"
+                />
 
-                <p className="text-gray-500 text-xs mt-2">
-                  + ₹2,000 advance applicable and 50% refundable
+                {/* BLINKING ADVANCE NOTE */}
+                <p className="mt-3 text-center text-xs font-semibold text-orange-600 animate-pulse">
+                  + ₹2,000 advance applicable • 50% refundable
                 </p>
               </div>
             </motion.div>
@@ -75,23 +90,22 @@ export default function RoomsCard() {
   );
 }
 
+/* EACH SHARE AS CARD (ONLY VISUAL CHANGE) */
 function Room({
   title,
   price,
-  highlight,
+  bg,
 }: {
   title: string;
   price: string;
-  highlight?: boolean;
+  bg: string;
 }) {
   return (
     <div
-      className={`border rounded-xl p-3 ${
-        highlight ? "bg-green-50 border-green-300" : ""
-      }`}
+      className={`rounded-xl p-3 border border-gray-200 ${bg}`}
     >
       <p className="font-semibold">{title}</p>
-      <p>{price} / month</p>
+      <p className="text-gray-700">{price}</p>
     </div>
   );
 }
