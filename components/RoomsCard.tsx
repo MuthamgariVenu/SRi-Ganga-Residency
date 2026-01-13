@@ -63,7 +63,7 @@ export default function RoomsCard() {
                 <Room title="2 Sharing – Non-AC" price="₹8,000" />
                 <Room title="3 Sharing – AC" price="₹8,500" highlight />
                 <p className="text-gray-500 text-xs">
-                  + ₹2,000 advance applicable
+                  + ₹2,000 advance applicable and 50% will return 
                 </p>
               </div>
             </motion.div>

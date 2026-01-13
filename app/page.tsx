@@ -16,7 +16,7 @@ export default function Home() {
         <LocationCard />
       </main>
 
-      <StickyCallBar />
+      {/* <StickyCallBar /> */}
     </>
   );
 }

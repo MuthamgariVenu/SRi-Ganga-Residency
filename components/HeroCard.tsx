@@ -30,7 +30,7 @@ export default function HeroCard() {
         </div>
 
         <div className="absolute top-3 right-3 bg-white/90 px-3 py-1 rounded-full text-xs font-semibold shadow">
-          📍 Ameerpet
+          📍 Anjaiah Nagar
         </div>
       </div>
 

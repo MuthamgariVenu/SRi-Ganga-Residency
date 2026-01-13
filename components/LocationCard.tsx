@@ -9,8 +9,9 @@ export default function LocationCard() {
       className="bg-white rounded-2xl shadow-lg p-4 mt-4"
     >
       <h2 className="text-lg font-bold mb-1">📍 Location</h2>
+
       <p className="text-sm text-gray-600">
-        Anjaiah Nagar, Hyderabad • Near platina building Gachibowli & IT Offices
+        Anjaiah Nagar, Hyderabad • Near Platina Building, Gachibowli & IT Offices
       </p>
 
       <div className="mt-3 space-y-1 text-sm">
@@ -19,15 +20,15 @@ export default function LocationCard() {
         <p>🏢 Near IT Offices</p>
       </div>
 
+      {/* Directions Button */}
       <a
-  href="https://maps.app.goo.gl/ZPkEcVBjn9btsgbX7"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block mt-4 text-center bg-blue-600 text-white py-2 rounded-xl font-semibold"
->
-  Get Directions
-</a>
-
+        href="https://www.google.com/maps/dir/?api=1&destination=17.4519647,78.3653393"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block mt-4 text-center bg-blue-600 text-white py-3 rounded-xl font-semibold"
+      >
+        📍 Get Directions
+      </a>
     </motion.div>
   );
 }
