@@ -26,7 +26,7 @@ export default function LocationCard() {
 
       {/* Directions Button */}
       <a
-        href="https://maps.app.goo.gl/BR4mtbBsuRNAmuEE8?g_st=iw"
+        href="https://maps.app.goo.gl/UHEVK878fEfpCQQVA?g_st=iw"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-4 w-full inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 py-3 text-white font-semibold"

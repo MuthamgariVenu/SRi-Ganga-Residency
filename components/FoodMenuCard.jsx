@@ -80,9 +80,10 @@ export default function FoodMenuCard() {
                 {/* Snacks */}
                 <div className="rounded-xl p-3 border bg-yellow-50">
                   <p className="font-semibold mb-1">☕ Snacks</p>
-                  <p className="text-gray-700">
-                    Snacks available 2 times per week
-                  </p>
+                 <p className="text-gray-700">
+  Snacks available on weekends
+</p>
+
                 </div>
 
                 {/* Note */}

@@ -51,6 +51,10 @@ export default function FacilitiesCard() {
           {/* Footer */}
           <div className="mt-6 text-center text-xs text-gray-600">
             All facilities are available for residents
+            <p className="mt-3 text-center text-sm font-semibold text-green-700 animate-pulse">
+  ⚡ Electricity bill included
+</p>
+
           </div>
         </div>
       </div>

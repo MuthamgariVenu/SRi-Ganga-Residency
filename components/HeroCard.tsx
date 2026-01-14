@@ -31,37 +31,37 @@ export default function HeroCard() {
 
         {/* TOP RIGHT */}
         <div className="absolute top-3 right-3 bg-white/90 px-3 py-1 rounded-full text-xs font-semibold shadow">
-          📍 siddiq Nagar
+          📍 Siddiq Nagar
         </div>
       </div>
 
       {/* CONTENT SECTION */}
       <div className="p-4 text-center">
         <p className="text-xs text-gray-600">
-          Siddiq Nagar,10Th Line ,HitechCity,Hyderabad,Telangana 500032
+          Siddiq Nagar, 10th Line, Hitech City, Hyderabad, Telangana 500032
         </p>
-<h1 className="text-xl font-extrabold text-gray-900 mt-2 opacity-100">
-  Platinum Bloom Women&apos;s PG
-</h1>
+
+        <h1 className="text-xl font-extrabold text-gray-900 mt-2 opacity-100">
+          Platinum Bloom Women&apos;s PG
+        </h1>
 
         <p className="text-sm text-gray-600 mt-1">
           Clean Rooms • Homely Food • Near Metro
         </p>
 
-        {/* PRIMARY CALL */}
+        {/* PRIMARY CALL – MAIN NUMBER */}
         <a
-          href="tel:9985499864"
+          href="tel:9701716111"
           className="inline-flex items-center justify-center gap-2 mt-4 px-6 py-2 rounded-full text-base font-bold text-white bg-green-600 animate-pulse shadow-lg"
         >
-          📞 Call Now: 
-           9701716111 
+          📞 Call Now: 9701716111
         </a>
 
         {/* SECONDARY CONTACT */}
         <p className="text-sm text-gray-700 mt-2">
           Alternate Contact:{" "}
           <a
-            href="tel:9701716111"
+            href="tel:9985499864"
             className="font-semibold text-green-700 underline"
           >
             9985499864
