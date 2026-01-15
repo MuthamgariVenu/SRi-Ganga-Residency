@@ -5,12 +5,11 @@ import Image from "next/image";
 import { useState } from "react";
 
 const images = [
-   { src: "/images/diningV3.jpg", label: "Entrance" },
-   { src: "/images/roomV31.jpg", label: "Room" },
-    { src: "/images/roomV32.jpg", label: "Room" },
-     { src: "/images/roomV33.jpg", label: "Room" },
+  { src: "/images/diningV3.jpg", label: "Entrance" },
+  { src: "/images/roomV31.jpg", label: "Room" },
+  { src: "/images/roomV32.jpg", label: "Room" },
+  { src: "/images/roomV33.jpg", label: "Room" },
   { src: "/images/roomV3.jpg", label: "Room" },
- 
   { src: "/images/outsideV3.jpg", label: "Outside" },
 ];
 
@@ -23,11 +22,15 @@ export default function GalleryCard() {
       {/* GALLERY CARD */}
       <div className="bg-white rounded-2xl shadow-lg p-4 mt-4">
         <div className="flex items-center justify-between mb-3">
-<h2 className="text-lg font-extrabold text-gray-900 opacity-100">
-  🖼️ Photo Gallery
-</h2>
+          {/* Title – FINAL LOCKED */}
+          <h2 className="text-lg font-extrabold text-gray-900">
+            🖼️ Photo Gallery
+          </h2>
 
-          <span className="text-xs text-blue-600">Tap to view</span>
+          {/* Subtitle – FINAL LOCKED */}
+          <span className="text-xs text-gray-700 font-medium">
+            Tap to view
+          </span>
         </div>
 
         {/* IMAGE PREVIEWS */}
@@ -36,8 +39,8 @@ export default function GalleryCard() {
             <div
               key={i}
               onClick={() => {
-                setActive(i);   // ✅ set correct image
-                setOpen(true);  // ✅ open gallery
+                setActive(i);
+                setOpen(true);
               }}
               className="relative min-w-[120px] h-24 rounded-xl overflow-hidden cursor-pointer"
             >
@@ -45,7 +48,7 @@ export default function GalleryCard() {
                 src={img.src}
                 alt={img.label}
                 fill
-                className="object-cover opacity-80"
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                 <span className="text-white text-sm font-semibold">
@@ -90,7 +93,8 @@ export default function GalleryCard() {
                   height={300}
                   className="rounded-xl object-cover"
                 />
-                <p className="text-center text-white mt-2">
+                {/* Caption – FINAL LOCKED */}
+                <p className="text-center text-white mt-2 font-medium">
                   {images[active].label}
                 </p>
               </motion.div>

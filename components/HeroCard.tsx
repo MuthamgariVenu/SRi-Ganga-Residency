@@ -37,15 +37,18 @@ export default function HeroCard() {
 
       {/* CONTENT SECTION */}
       <div className="p-4 text-center">
-        <p className="text-xs text-gray-600">
+        {/* Address – subtitle standard */}
+        <p className="text-xs text-gray-700 font-medium">
           Siddiq Nagar, 10th Line, Hitech City, Hyderabad, Telangana 500032
         </p>
 
-        <h1 className="text-xl font-extrabold text-gray-900 mt-2 opacity-100">
+        {/* Title – FINAL LOCKED STYLE */}
+        <h1 className="text-xl font-extrabold text-gray-900 mt-2">
           Platinum Bloom Women&apos;s PG
         </h1>
 
-        <p className="text-sm text-gray-600 mt-1">
+        {/* Subtitle – FINAL LOCKED STYLE */}
+        <p className="text-sm text-gray-700 font-medium mt-1">
           Clean Rooms • Homely Food • Near Metro
         </p>
 
@@ -58,7 +61,7 @@ export default function HeroCard() {
         </a>
 
         {/* SECONDARY CONTACT */}
-        <p className="text-sm text-gray-700 mt-2">
+        <p className="text-sm text-gray-700 font-medium mt-2">
           Alternate Contact:{" "}
           <a
             href="tel:9985499864"
