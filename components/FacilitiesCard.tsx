@@ -18,6 +18,14 @@ export default function FacilitiesCard() {
       tag: "Popular",
       bg: "bg-indigo-50",
     },
+     {
+    
+  icon: "🏋️",
+  title: "Gym",
+  sub: "Fitness access",
+  bg: "bg-purple-50",
+},
+
     {
       icon: "🗄️",
       title: "Cupboards",
@@ -53,13 +61,7 @@ export default function FacilitiesCard() {
       tag: "Secure",
       bg: "bg-slate-50",
     },
-    {
-      icon: "🆔",
-      title: "Gym",
-      sub: "Safe entry",
-      tag: "Secure",
-      bg: "bg-purple-50",
-    },
+   
     {
       icon: "👟",
       title: "Shoe Rack",

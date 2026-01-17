@@ -54,22 +54,24 @@ export default function HeroCard() {
 
         {/* PRIMARY CALL – MAIN NUMBER */}
         <a
-          href="tel:9701716111"
+          href="tel:9346818393"
           className="inline-flex items-center justify-center gap-2 mt-4 px-6 py-2 rounded-full text-base font-bold text-white bg-green-600 animate-pulse shadow-lg"
         >
-          📞 Call Now: 99*******
+          📞 Call Now: 9346818393
         </a>
+{/* SECONDARY CONTACT */}
+<p className="text-sm text-gray-700 font-medium mt-2">
+  WhatsApp Contact:{" "}
+  <a
+    href="https://wa.me/918712129578"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold text-green-700 underline"
+  >
+    8712129578
+  </a>
+</p>
 
-        {/* SECONDARY CONTACT */}
-        <p className="text-sm text-gray-700 font-medium mt-2">
-          Alternate Contact:{" "}
-          <a
-            href="tel:8712129578"
-            className="font-semibold text-green-700 underline"
-          >
-            8712129578
-          </a>
-        </p>
       </div>
     </motion.div>
   );

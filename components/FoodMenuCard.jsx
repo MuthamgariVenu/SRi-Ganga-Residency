@@ -84,18 +84,12 @@ export default function FoodMenuCard() {
                     Chicken – 2 times per week
                     <br />
                     Egg – 2 times per week
+                    <br />
+                    Any Fruits one Time/Weekly
                   </p>
                 </div>
 
-                {/* Snacks */}
-                <div className="rounded-xl p-3 border bg-yellow-50">
-                  <p className="font-semibold text-gray-900 mb-1">
-                    ☕ Snacks
-                  </p>
-                  <p className="text-gray-800 font-medium">
-                    Snacks available on weekends
-                  </p>
-                </div>
+               
 
                 {/* Note */}
                 <div className="rounded-xl p-3 border bg-blue-50 text-xs text-gray-700 font-medium">

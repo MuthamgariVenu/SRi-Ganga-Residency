@@ -65,30 +65,36 @@ export default function RoomsCard() {
               <div className="space-y-3 text-sm">
                 <Room
                   title="5 Sharing "
-                  price="₹6,000 / month"
+                  price="₹6,500 / month"
                   bg="bg-indigo-50"
                 />
                 <Room
                   title="4 Sharing "
-                  price="₹6,500 / month"
+                  price="₹7,500 / month"
                   bg="bg-indigo-50"
                 />
 
                 <Room
                   title="3 Sharing "
-                  price="₹7,500 / month"
+                  price="₹8,000 And 8500 / month"
                   bg="bg-cyan-50"
                 />
 
                 <Room
                   title="2 Sharing "
-                  price="₹9,500 / month"
+                  price="₹10,000 / month"
+                  bg="bg-green-50"
+                />
+                 <Room
+                  title="Single Sharing "
+                  price="₹18,000 / month"
                   bg="bg-green-50"
                 />
 
+
                 {/* Advance Note */}
                 <p className="mt-3 text-center text-xs font-semibold text-orange-600 animate-pulse">
-                  Advance ₹3,000 applicable • ₹2,000 refundable • One month prior
+                  Advance ₹2,000 applicable • 1,000 refundable • 15 Days prior
                   notice mandatory
                 </p>
               </div>

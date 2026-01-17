@@ -20,10 +20,12 @@ export default function LocationCard() {
       </p>
 
       {/* Nearby Info */}
-      <div className="mt-3 space-y-1 text-sm text-gray-700 font-medium">
-        <p>🚇 10 mins to Metro</p>
-        <p>🏢 Near IT Offices</p>
-      </div>
+<div className="mt-3 space-y-1 text-sm text-gray-700 font-medium">
+
+  <p>🏢 Near IT Offices</p>
+  <p>🛍️ AMB Mall – 1 km</p>
+  <p>🚇 10 mins to Raidurga Metro</p>
+</div>
 
       {/* Directions Button */}
       <a
