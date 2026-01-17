@@ -15,7 +15,8 @@ export default function LocationCard() {
 
       {/* Address – Subtitle standard */}
       <p className="text-sm text-gray-700 font-medium">
-         Hitech City, Hyderabad, Telangana – 500032
+         Road No 9,Siddiq Nagar,Gachibowli, Hyderabad, Telangana 500032
+
       </p>
 
       {/* Nearby Info */}
@@ -26,7 +27,7 @@ export default function LocationCard() {
 
       {/* Directions Button */}
       <a
-        href="https://maps.app.goo.gl/UHEVK878fEfp"
+        href="https://maps.app.goo.gl/yWnLp5oCUoyWdGGx5?g_st=im"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-4 w-full inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 py-3 text-white font-semibold"

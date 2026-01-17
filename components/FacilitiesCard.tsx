@@ -55,7 +55,7 @@ export default function FacilitiesCard() {
     },
     {
       icon: "🆔",
-      title: "Fingerprint",
+      title: "Gym",
       sub: "Safe entry",
       tag: "Secure",
       bg: "bg-purple-50",

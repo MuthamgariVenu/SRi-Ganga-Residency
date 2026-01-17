@@ -14,7 +14,7 @@ export default function HeroCard() {
       {/* IMAGE SECTION */}
       <div className="relative w-full aspect-[16/9]">
         <Image
-          src="/images/pg-frontV4.jpg"
+          src="/images/pg-frontg.jpg"
           alt="Platinum Bloom Women's PG"
           fill
           priority
@@ -39,12 +39,12 @@ export default function HeroCard() {
       <div className="p-4 text-center">
         {/* Address – subtitle standard */}
         <p className="text-xs text-gray-700 font-medium">
-           Hitech City, Hyderabad, Telangana 500032
+          Road No 9,Siddiq Nagar,Gachibowli, Hyderabad, Telangana 500032
         </p>
 
         {/* Title – FINAL LOCKED STYLE */}
         <h1 className="text-xl font-extrabold text-gray-900 mt-2">
-          Sample PG Website (Demo)
+          Sri Ganga Residency Luxury Men's & Women's PG
         </h1>
 
         {/* Subtitle – FINAL LOCKED STYLE */}
@@ -64,10 +64,10 @@ export default function HeroCard() {
         <p className="text-sm text-gray-700 font-medium mt-2">
           Alternate Contact:{" "}
           <a
-            href="tel:9985499864"
+            href="tel:8712129578"
             className="font-semibold text-green-700 underline"
           >
-            99********
+            8712129578
           </a>
         </p>
       </div>
